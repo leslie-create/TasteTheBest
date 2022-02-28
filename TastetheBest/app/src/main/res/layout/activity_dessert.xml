@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6638e2"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".Dessert">
+
+    <RelativeLayout
+        android:id="@+id/centerhorizontalline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/centerverticalline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lecheflanfirst"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/lecheflanpic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/lecheflan" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lecheflanpic"
+            android:layout_marginLeft="5dp"
+            android:text="LECHE FLAN"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adobofirst"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+
+            tools:ignore="NotSibling"
+
+            />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adobofirst"
+            android:layout_marginLeft="110dp"
+
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fruitsaladsecond"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/fruitsaladpic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/fruitsalad" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fruitsaladpic"
+            android:layout_marginLeft="5dp"
+            android:text="CLASSIC FRUIT SALAD"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sinigangsecond"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sinigangsecond"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ubeputothird"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/lecheflanfirst"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/ubeputopic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/ubeputo" />
+
+        <TextView
+            android:id="@+id/txt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ubeputopic"
+            android:layout_marginLeft="5dp"
+            android:text="UBE PUTO"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beefsteakthird"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beefsteakthird"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/grahamtahofourth"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/fruitsaladsecond"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/grahamtahopic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/mangograham" />
+
+        <TextView
+            android:id="@+id/txt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grahamtahopic"
+            android:layout_marginLeft="5dp"
+            android:text="CREAMY GRAHAM TAHO"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/karekarefourth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/karekarefourth"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/majablancafifth"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/ubeputothird"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/majablancapic"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/majablanca" />
+
+        <TextView
+            android:id="@+id/txt13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/majablancapic"
+            android:layout_marginLeft="5dp"
+            android:text="MARVELOUSLY TASTY MAJA BLANCA"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calderetafifth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calderetafifth"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="userRecipe"
+        android:id="@+id/sixth"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/grahamtahofourth"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg">
+        <ImageView
+            android:id="@+id/userRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/dessertlogo" />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userRecipe"
+            android:layout_marginLeft="5dp"
+            android:text="USERS RECIPE"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/lecheflanbtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="140dp"-->
+    <!--        android:background="@drawable/dessert_btn_design"-->
+    <!--        android:text="Leche Flan"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/fruitsaladbtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/dessert_btn_design2"-->
+    <!--        android:text="Classic Fruit Salad"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/lecheflanbtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/ubeputobtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/dessert_btn_design3"-->
+    <!--        android:text="Ube Puto"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/fruitsaladbtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mangograhambtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/dessert_btn_design4"-->
+    <!--        android:text="Creamy Mango Graham-->
+    <!--        Taho"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/ubeputobtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/majablancabtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/dessert_btn_design5"-->
+    <!--        android:text="Marvelously Tasty Maja Blanca"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/mangograhambtn" />-->
+
+</RelativeLayout>

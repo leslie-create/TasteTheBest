@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    // Top Menu
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp">
+
+        // Left Menu
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#abbd4d"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="1dp">
+
+            // Menu 1 title
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="RECIPE"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            // Menu 1 Bottom Underline
+
+        </LinearLayout>
+
+        // Right Menu
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#a5a053"
+            android:gravity="center_horizontal"
+            android:paddingTop="1dp">
+
+            // Menu 2 title
+            <TextView
+                android:id="@+id/rateme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RATE ME"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:context=".MajaBlanca">
+
+
+        <TextView
+            android:id="@+id/pakbet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="152dp"
+            android:gravity="center"
+            android:text="MARVELOUSLY TASTY BLANCA"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:text="INGREDIENTS"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:width="330dp"
+            android:gravity="left"
+            android:text="2 cups	evaporated milk
+\n 1 pack	NESTLÉ® ALL PURPOSE CREAM 250ml
+\n 1 cup	cornstarch
+\n 1 cup	sugar
+\n 1 ⅓	whole corn kerne"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe" />
+
+        <TextView
+            android:id="@+id/procedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="PROCEDURE"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="330dp"
+            android:text="STEP 1 \n
+Combine evaporated milk, NESTLÉ ® ALL PURPOSE CREAM , cornstarch and sugar in a pan. Whisk over low heat until cornstarch is fully dissolved. \n
+\n
+STEP 2 \n
+When mixture is smooth, thick and free of lumps, add corn kernel. Transfer into a mold. Cool, then refrigerate for 2 hours or until set."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/procedure" />
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/majablanca"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-2dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+</LinearLayout>

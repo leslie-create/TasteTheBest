@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "746609822937",
+    "firebase_url": "https://taste-the-best-bb51c-default-rtdb.firebaseio.com",
+    "project_id": "taste-the-best-bb51c",
+    "storage_bucket": "taste-the-best-bb51c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746609822937:android:5fcab85e38c310116982c8",
+        "android_client_info": {
+          "package_name": "com.example.tastethebest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746609822937-ohhe2k0p4h30q871lkbk1dvf54hki7se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuwi6tAjsToioYivAP6gX_JaWayPeMkeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746609822937-ohhe2k0p4h30q871lkbk1dvf54hki7se.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

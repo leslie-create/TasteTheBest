@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    // Top Menu
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp">
+
+        // Left Menu
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#abbd4d"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="1dp">
+
+            // Menu 1 title
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="RECIPE"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            // Menu 1 Bottom Underline
+
+        </LinearLayout>
+
+        // Right Menu
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#a5a053"
+            android:gravity="center_horizontal"
+            android:paddingTop="1dp">
+
+            // Menu 2 title
+            <TextView
+                android:id="@+id/rateme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RATE ME"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:context=".LecheFlan">
+
+
+
+        <TextView
+            android:id="@+id/pakbet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="152dp"
+            android:gravity="center"
+            android:text="LECHE FLAN"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:text="INGREDIENTS"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:width="330dp"
+            android:gravity="left"
+            android:text="6 pcs	egg yolks
+\n 1 pack	NESTLÉ® All Purpose Cream 125ml
+\n 1 small can	Nestle® Carnation® Condensada
+\n ½ tsp	vanilla
+\n 1/8 tsp	fine salt
+\n 3 tbsp	sugar"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe" />
+
+        <TextView
+            android:id="@+id/procedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="PROCEDURE"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="330dp"
+            android:text="STEP 1 \n
+Mix egg yolks with NESTLÉ® All Purpose Cream, Nestle® Carnation® Condensada, vanilla, and salt. \n
+\n
+STEP 2 \n
+Add sugar in a large lyanera. Slowly melt sugar over low heat until golden brown. Set aside. \n
+\n
+STEP 3 \n
+Strain cream mixture into the lyanera. Cover tightly with aluminum foil and steam for 25 minutes. Set aside to cool. \n
+\n
+STEP 4 \n
+Refrigerate overnight. Unmold into a serving plate and serve well chilled. "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/procedure"
+            app:layout_constraintVertical_bias="0.296" />
+
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/lecheflan"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-2dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+</LinearLayout>

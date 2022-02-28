@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    // Top Menu
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp">
+
+        // Left Menu
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#abbd4d"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="1dp">
+
+            // Menu 1 title
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="RECIPE"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            // Menu 1 Bottom Underline
+
+        </LinearLayout>
+
+        // Right Menu
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#a5a053"
+            android:gravity="center_horizontal"
+            android:paddingTop="1dp">
+
+            // Menu 2 title
+            <TextView
+                android:id="@+id/rateme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RATE ME"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Chopsuey">
+
+
+
+        <TextView
+            android:id="@+id/pakbet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="152dp"
+            android:gravity="center"
+            android:text="CHOPSUEY"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:text="INGREDIENTS"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="11dp"
+            android:width="330dp"
+            android:gravity="left"
+            android:text="¼ cup shortening \n ¼ cup shortening1 ½ cups diced pork loin \n 1 cup diced onion \n 1 cup diced celery \n 1 cup hot water \n 1 teaspoon salt \n ⅛ teaspoon ground black pepper \n 1 (14.5 ounce) can bean sprouts, drained and rinsed \n ⅓ cup cold water \n 2 tablespoons cornstarch \n 2 teaspoons soy sauce
+ \n 1 teaspoon white sugar"
+            app:layout_constraintBottom_toTopOf="@+id/procedure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.573"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/procedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="PROCEDURE"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="330dp"
+            android:text="Step 1 \n Heat shortening in a large, deep skillet. Sear pork until it turns white, then add onion and saute for 5 minutes. Add celery, hot water, salt and pepper. Cover skillet and simmer for 5 minutes. Add sprouts and heat to boiling.
+\n  Step 2 \n In a small bowl combine the cold water, cornstarch, soy sauce and sugar. Mix together and add to skillet mixture. Cook for 5 minutes, or until thickened to taste."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/procedure"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/caldereta"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-2dp"
+            tools:ignore="MissingConstraints" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+</LinearLayout>

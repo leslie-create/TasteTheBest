@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    // Top Menu
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp">
+
+        // Left Menu
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#abbd4d"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="1dp">
+
+            // Menu 1 title
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="RECIPE"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            // Menu 1 Bottom Underline
+
+        </LinearLayout>
+
+        // Right Menu
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#a5a053"
+            android:gravity="center_horizontal"
+            android:paddingTop="1dp">
+
+            // Menu 2 title
+            <TextView
+                android:id="@+id/rateme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RATE ME"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:context=".Caldereta">
+
+
+        <TextView
+            android:id="@+id/pakbet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="152dp"
+            android:gravity="center"
+            android:text="CALDERETA"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:text="INGREDIENTS"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:width="330dp"
+            android:gravity="left"
+            android:text="3 tablespoons vegetable oil
+\n 1 ½ pounds cubed beef stew meat salt and ground black pepper to taste
+\n 3 cloves garlic, crushed
+\n 3 cups water
+\n ½ cup unsweetened pineapple juice
+\n 1 onion, chopped
+\n 1 (14 ounce) can tomato sauce
+\n ¼ cup tomato paste
+\n 2 red potatoes, diced
+\n 1 red bell pepper, sliced
+\n 1 large carrot, sliced diagonally
+\n ½ pound miniature cocktail sausages
+\n 1 (8 ounce) can pineapple chunks, undrained
+\n 1 (6 ounce) can medium pitted ripe olives, drained
+\n 3 large bay leaves
+\n 1 tablespoon hot pepper sauce (such as Tabasco®) (Optional)"
+            app:layout_constraintBottom_toTopOf="@+id/procedure"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe" />
+
+        <TextView
+            android:id="@+id/procedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="PROCEDURE"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="330dp"
+            android:text="Step 1 \n
+Heat vegetable oil in a large pot over medium heat. Sprinkle beef with salt and black pepper and brown in the hot oil with garlic, about 10 minutes. Pour in water, pineapple juice, onion, tomato sauce, and tomato paste. Bring to a boil, turn heat to low, and simmer until beef is almost tender, 35 to 45 minutes.
+ \n \n Step 2 \n
+Stir potatoes, red bell pepper, carrot, mini sausages, pineapple chunks with their juice, olives, and bay leaves into the stew. Bring back to a boil and simmer until potatoes are tender, about 20 more minutes. Season with hot pepper sauce, salt, and black pepper."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/procedure"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/caldereta"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-2dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+</LinearLayout>

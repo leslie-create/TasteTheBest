@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    // Top Menu
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp">
+
+        // Left Menu
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#abbd4d"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="1dp">
+
+            // Menu 1 title
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="RECIPE"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            // Menu 1 Bottom Underline
+
+        </LinearLayout>
+
+        // Right Menu
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#a5a053"
+            android:gravity="center_horizontal"
+            android:paddingTop="1dp">
+
+            // Menu 2 title
+            <TextView
+                android:id="@+id/rateme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RATE ME"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Pinakbet">
+
+
+
+        <TextView
+            android:id="@+id/pakbet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="152dp"
+            android:gravity="center"
+            android:text="PINAKBET"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="INGREDIENTS"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pakbet" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="11dp"
+            android:gravity="left"
+            android:width="330dp"
+            android:text="3 tablespoons olive oil \n 1 onion, chopped
+\n 2 cloves garlic, minced \n ½ pound pork loin, chopped \n ½ pound peeled and deveined prawns \n salt and pepper to taste \n 1 tomato, chopped \n ¼ pound zucchini, seeded and cut into bite-size pieces \n ¼ pound fresh okra, ends trimmed \n ¼ pound fresh green beans, trimmed
+ \n ¼ pound eggplant, cut into bite-size pieces \n 1 small bitter melon, cut into bite-size pieces"
+            app:layout_constraintBottom_toTopOf="@+id/procedure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.674"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/procedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="PROCEDURE"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="330dp"
+            android:text="Heat the oil in a large pot over medium heat; cook and stir the onion and garlic in the hot oil until tender, about 5 minutes. Stir in the pork and cook until completely browned, 5 to 7 minutes. Stir the shrimp into the mixture; season with salt and pepper. Continue cooking until the shrimp turn pink, about 5 minutes. Add the tomato to the pot, cover, and let cook 5 minutes. Stir the zucchini, okra, green beans, eggplant, and bitter melon into the mixture; cover, and cook until the vegetables are all soft to the touch, about 10 minutes more. Serve hot."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/procedure"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/pakbet"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-2dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+</LinearLayout>

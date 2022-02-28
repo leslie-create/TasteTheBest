@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#de422a"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".Meat">
+
+    <RelativeLayout
+        android:id="@+id/centerhorizontalline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/centerverticalline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ginataangsalmonfirst"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/ginataansalmonpic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/ginataangsalmon" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ginataansalmonpic"
+            android:layout_marginLeft="5dp"
+            android:text="GINATAANG SALMON"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adobofirst"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+
+            tools:ignore="NotSibling"
+
+            />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adobofirst"
+            android:layout_marginLeft="110dp"
+
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pinangatsecond"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/pinangatpic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/pinangat" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pinangatpic"
+            android:layout_marginLeft="5dp"
+            android:text="PINANGAT NA GALUNGGONG"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sinigangsecond"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sinigangsecond"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sweettilapiathird"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/ginataangsalmonfirst"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/sweettilapiapic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/sweettilapia" />
+
+        <TextView
+            android:id="@+id/txt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sweettilapiapic"
+            android:layout_marginLeft="5dp"
+            android:text="SWEET AND SOUR TILAPIA"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beefsteakthird"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beefsteakthird"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bangussisigfourth"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/pinangatsecond"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/bangussisigpic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/bangussisig" />
+
+        <TextView
+            android:id="@+id/txt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bangussisigpic"
+            android:layout_marginLeft="5dp"
+            android:text="BANGUS SISIG"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/karekarefourth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/karekarefourth"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fishsinigangfifth"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/sweettilapiathird"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/fishsinigangpic"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/fishsinigang" />
+
+        <TextView
+            android:id="@+id/txt13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fishsinigangpic"
+            android:layout_marginLeft="5dp"
+            android:text="FISH SINIGANG"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calderetafifth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calderetafifth"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="userRecipe"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/bangussisigfourth"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg">
+
+        <ImageView
+            android:id="@+id/userRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/fishhlogo" />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userRecipe"
+            android:layout_marginLeft="5dp"
+            android:text="USERS RECIPE"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/ginataangsalmonbtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="140dp"-->
+    <!--        android:background="@drawable/fish_btn_design"-->
+    <!--        android:text="Ginataang Salmon"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/pinangatbtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/fish_btn_design2"-->
+    <!--        android:text="Pinangat na Galunggong-->
+    <!--        sa kamias"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/ginataangsalmonbtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/sweettilapiabtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/fish_btn_design3"-->
+    <!--        android:text="Sweet and Sour Tilapia"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/pinangatbtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/bangussisigbtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/fish_btn_design4"-->
+    <!--        android:text="Bangus Sisig"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/sweettilapiabtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/fishsinigangbtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/fish_btn_design5"-->
+    <!--        android:text="Fish Sinigang"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/bangussisigbtn" />-->
+
+</RelativeLayout>

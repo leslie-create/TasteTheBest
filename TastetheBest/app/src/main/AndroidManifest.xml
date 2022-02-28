@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tastethebest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TasteTheBest">
+        <activity
+            android:name=".DictionaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserRecipeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".UserRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RatingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MajaBlanca"
+            android:exported="false" />
+        <activity
+            android:name=".MangoGraham"
+            android:exported="false" />
+        <activity
+            android:name=".UbePuto"
+            android:exported="false" />
+        <activity
+            android:name=".FruitSalad"
+            android:exported="false" />
+        <activity
+            android:name=".LecheFlan"
+            android:exported="false" />
+        <activity
+            android:name=".FishSinigang"
+            android:exported="false" />
+        <activity
+            android:name=".BangusSisig"
+            android:exported="false" />
+        <activity
+            android:name=".SweetTilapia"
+            android:exported="false" />
+        <activity
+            android:name=".Pinangat"
+            android:exported="false" />
+        <activity
+            android:name=".GinataangSalmon"
+            android:exported="false" />
+        <activity
+            android:name=".Caldereta"
+            android:exported="false" />
+        <activity
+            android:name=".KareKare"
+            android:exported="false" />
+        <activity
+            android:name=".BeefSteak"
+            android:exported="false" />
+        <activity
+            android:name=".Sinigang"
+            android:exported="false" />
+        <activity
+            android:name=".Adobo"
+            android:exported="false" />
+        <activity
+            android:name=".Response"
+            android:exported="false" />
+        <activity
+            android:name=".GinataangKalabasa"
+            android:exported="false" />
+        <activity
+            android:name=".Munggo"
+            android:exported="false" />
+        <activity
+            android:name=".Binagoongan"
+            android:exported="false" />
+        <activity
+            android:name=".Chapsuey"
+            android:exported="false" />
+        <activity
+            android:name=".Pinakbet"
+            android:exported="false" />
+        <activity
+            android:name=".Dessert"
+            android:exported="false" />
+        <activity
+            android:name=".Fish"
+            android:exported="false" />
+        <activity
+            android:name=".Meat"
+            android:exported="false" />
+        <activity
+            android:name=".Vegetables"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

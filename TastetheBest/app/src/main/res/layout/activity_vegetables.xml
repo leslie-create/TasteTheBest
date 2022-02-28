@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA820"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".Vegetables">
+
+
+    <RelativeLayout
+        android:id="@+id/centerhorizontalline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/centerverticalline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/pakbetpic"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/pakbet" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pakbetpic"
+            android:layout_marginLeft="5dp"
+            android:text="PAKBET"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+
+            tools:ignore="NotSibling"
+
+            />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first"
+            android:layout_marginLeft="110dp"
+
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second"
+
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/chopsueypic"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/chopsuey" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chopsueypic"
+            android:layout_marginLeft="5dp"
+            android:text="CHOPSUEY"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/third"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/first"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/binagoonganpic"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/binagoongan" />
+
+        <TextView
+            android:id="@+id/txt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/binagoonganpic"
+            android:layout_marginLeft="5dp"
+            android:text="BINAGOONGAN BAGNET WITH TALONG"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fourth"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/second"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/munggopic"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/munggo" />
+
+        <TextView
+            android:id="@+id/txt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/munggopic"
+            android:layout_marginLeft="5dp"
+            android:text="GINISANG MUNGGO"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourth"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fifth"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/third"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/ginataangkalabasapic"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/ginataangkalabasa" />
+
+        <TextView
+            android:id="@+id/txt13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ginataangkalabasapic"
+            android:layout_marginLeft="5dp"
+            android:text="GINATAANG KALABASA AT SITAW"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fifth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fifth"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sixth"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/fourth"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:onClick="userRecipe">
+
+        <ImageView
+            android:id="@+id/userRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/vegetablelogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userRecipe"
+            android:layout_marginLeft="5dp"
+            android:text="USERS RECIPE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/pinakbetbtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="140dp"-->
+    <!--        android:background="@drawable/btn_design"-->
+    <!--        android:text="PINAKBET"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/chopsueybtbn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/btn_design2"-->
+    <!--        android:text="CHOPSUEY"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/pinakbetbtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/binagoonganbtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/btn_design3"-->
+    <!--        android:text="BINAGOONGAN BAGNET-->
+    <!--        WITH TALONG"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/chopsueybtbn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/munggobtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/btn_design4"-->
+    <!--        android:text="GINISANG MUNGGO"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/binagoonganbtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/ginataangkalabasabtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/btn_design5"-->
+    <!--        android:text="GINATAANG KALABASA AT SITAW"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/munggobtn" />-->
+
+
+</RelativeLayout>

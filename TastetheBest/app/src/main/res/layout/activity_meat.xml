@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CB6862"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".Meat">
+
+    <RelativeLayout
+        android:id="@+id/centerhorizontalline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/centerverticalline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/adobofirst"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/adobopic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/adobo" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adobopic"
+            android:layout_marginLeft="5dp"
+            android:text="ADOBO"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adobofirst"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+
+            tools:ignore="NotSibling"
+
+            />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adobofirst"
+            android:layout_marginLeft="110dp"
+
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sinigangsecond"
+
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/sinigangpic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/sinigang" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sinigangpic"
+            android:layout_marginLeft="5dp"
+            android:text="SINIGANG"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sinigangsecond"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sinigangsecond"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/beefsteakthird"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/adobofirst"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/beefsteakpic"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/beefsteak" />
+
+        <TextView
+            android:id="@+id/txt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beefsteakpic"
+            android:layout_marginLeft="5dp"
+            android:text="BEEF STEAK"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beefsteakthird"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beefsteakthird"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/karekarefourth"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/sinigangsecond"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/karekarepic"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/karekare" />
+
+        <TextView
+            android:id="@+id/txt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/karekarepic"
+            android:layout_marginLeft="5dp"
+            android:text="KARE-KARE"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/karekarefourth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/karekarefourth"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calderetafifth"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/beefsteakthird"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/calderetapic"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/caldereta" />
+
+        <TextView
+            android:id="@+id/txt13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calderetapic"
+            android:layout_marginLeft="5dp"
+            android:text="CALDERETA"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calderetafifth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:text="Ingredients"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calderetafifth"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="175dp"
+            android:text="Rate me"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/karekarefourth"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/vegetablebg"
+        android:onClick="userRecipe">
+
+        <ImageView
+            android:id="@+id/userRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/meatlogo" />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userRecipe"
+            android:layout_marginLeft="5dp"
+            android:text="USERS RECIPE"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/adobobtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="140dp"-->
+    <!--        android:background="@drawable/meat_btn_design"-->
+    <!--        android:text="ADOBO"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/sinigangbtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/meat_btn_design2"-->
+    <!--        android:text="SINIGANG"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/adobobtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/beefsteakbtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/meat_btn_design3"-->
+    <!--        android:text="Beef Steak"-->
+    <!--        android:textColor="#fff"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/sinigangbtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/karekarebtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/meat_btn_design4"-->
+    <!--        android:text="Kare Kare"-->
+    <!--        android:textColor="#808080"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/beefsteakbtn" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/calderetabtn"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:background="@drawable/meat_btn_design5"-->
+    <!--        android:text="Caldereta"-->
+    <!--        android:textColor="#808080"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/karekarebtn" />-->
+
+</RelativeLayout>
